@@ -1,4 +1,8 @@
 Ladecibelle::Application.routes.draw do
+  get "page/home"
+
+  get "page/contact"
+
  get "home/index"
  #root :to => 'pages#home'
  root :to => 'home#index'
