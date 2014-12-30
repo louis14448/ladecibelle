@@ -1,0 +1,25 @@
+<h1>Listing produits</h1>
+
+<table>
+  <tr>
+    <th>Lib produit</th>
+    <th>Prix ttc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @produits.each do |produit| %>
+  <tr>
+    <td><%= produit.lib_produit %></td>
+    <td><%= produit.prix_ttc %></td>
+    <td><%= link_to 'Show', produit %></td>
+    <td><%= link_to 'Edit', edit_produit_path(produit) %></td>
+    <td><%= link_to 'Destroy', produit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Produit', new_produit_path %>

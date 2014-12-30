@@ -1,8 +1,20 @@
 Ladecibelle::Application.routes.draw do
-  resources :commands
-
-
   resources :clients
+
+
+  resources :produits
+
+
+  resources :command_details_produits
+
+
+  resources :services
+
+
+  resources :command_details_services
+
+
+  resources :commands
 
 
   get "page/home"

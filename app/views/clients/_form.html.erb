@@ -12,12 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :id_client %><br />
-    <%= f.text_field :id_client %>
-  </div>
-  <div class="field">
     <%= f.label :nom %><br />
-    <%= f.text_area :nom %>
+    <%= f.text_field :nom %>
   </div>
   <div class="field">
     <%= f.label :prenom %><br />
@@ -28,12 +24,12 @@
     <%= f.text_field :tel %>
   </div>
   <div class="field">
-    <%= f.label :adrrLivraison %><br />
-    <%= f.text_field :adrrLivraison %>
+    <%= f.label :addr_fact %><br />
+    <%= f.text_field :addr_fact %>
   </div>
   <div class="field">
-    <%= f.label :addrFacturation %><br />
-    <%= f.text_field :addrFacturation %>
+    <%= f.label :adr_livraison %><br />
+    <%= f.text_field :adr_livraison %>
   </div>
   <div class="actions">
     <%= f.submit %>

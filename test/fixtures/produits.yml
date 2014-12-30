@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lib_produit: MyText
+  prix_ttc: 1.5
+
+two:
+  lib_produit: MyText
+  prix_ttc: 1.5

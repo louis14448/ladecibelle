@@ -1,17 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id_client: 
-  nom: MyText
-  prenom: 
-  tel: 
-  adrrLivraison: 
-  addrFacturation: MyString
+  nom: MyString
+  prenom: MyString
+  tel: MyString
+  addr_fact: MyString
+  adr_livraison: MyString
 
 two:
-  id_client: 
-  nom: MyText
-  prenom: 
-  tel: 
-  adrrLivraison: 
-  addrFacturation: MyString
+  nom: MyString
+  prenom: MyString
+  tel: MyString
+  addr_fact: MyString
+  adr_livraison: MyString

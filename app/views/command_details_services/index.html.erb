@@ -1,0 +1,29 @@
+<h1>Listing command_details_services</h1>
+
+<table>
+  <tr>
+    <th>Id command</th>
+    <th>Id service</th>
+    <th>Quantite</th>
+    <th>Prix</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @command_details_services.each do |command_details_service| %>
+  <tr>
+    <td><%= command_details_service.id_command %></td>
+    <td><%= command_details_service.id_service %></td>
+    <td><%= command_details_service.quantite %></td>
+    <td><%= command_details_service.prix %></td>
+    <td><%= link_to 'Show', command_details_service %></td>
+    <td><%= link_to 'Edit', edit_command_details_service_path(command_details_service) %></td>
+    <td><%= link_to 'Destroy', command_details_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Command details service', new_command_details_service_path %>

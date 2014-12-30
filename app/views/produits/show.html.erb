@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lib produit:</b>
+  <%= @produit.lib_produit %>
+</p>
+
+<p>
+  <b>Prix ttc:</b>
+  <%= @produit.prix_ttc %>
+</p>
+
+
+<%= link_to 'Edit', edit_produit_path(@produit) %> |
+<%= link_to 'Back', produits_path %>

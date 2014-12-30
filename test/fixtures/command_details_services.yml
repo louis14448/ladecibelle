@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_command: 
+  id_service: 
+  quantite: 1
+  prix: 1.5
+
+two:
+  id_command: 
+  id_service: 
+  quantite: 1
+  prix: 1.5

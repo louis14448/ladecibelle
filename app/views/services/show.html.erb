@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Lib service:</b>
+  <%= @service.lib_service %>
+</p>
+
+<p>
+  <b>Prix ttc:</b>
+  <%= @service.prix_ttc %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

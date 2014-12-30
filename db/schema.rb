@@ -11,6 +11,55 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20141230200512) do
+
+  create_table "clients", :force => true do |t|
+    t.string   "nom"
+    t.string   "prenom"
+    t.string   "tel"
+    t.string   "addr_fact"
+    t.string   "adr_livraison"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "command_details_produits", :force => true do |t|
+    t.text     "id_command"
+    t.text     "id_service"
+    t.integer  "quantite"
+    t.float    "prix"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "command_details_services", :force => true do |t|
+    t.text     "id_service"
+    t.integer  "quantite"
+    t.float    "prix"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "commands", :force => true do |t|
+    t.text     "id_client"
+    t.date     "datePaiement"
+    t.float    "pritTTC"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "produits", :force => true do |t|
+    t.text     "lib_produit"
+    t.float    "prix_ttc"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "services", :force => true do |t|
+    t.text     "lib_service"
+    t.float    "prix_ttc"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
 end
