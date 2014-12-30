@@ -1,4 +1,10 @@
 Ladecibelle::Application.routes.draw do
+  resources :commands
+
+
+  resources :clients
+
+
   get "page/home"
 
   get "page/contact"
