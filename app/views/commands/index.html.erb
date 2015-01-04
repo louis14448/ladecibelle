@@ -2,10 +2,9 @@
 
 <table>
   <tr>
-    <th>Id command</th>
-    <th>Id client</th>
-    <th>Datepaiement</th>
-    <th>Pritttc</th>
+    <th>Client</th>
+    <th>Dates paiement</th>
+    <th>Prix ttc</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +12,9 @@
 
 <% @commands.each do |command| %>
   <tr>
-    <td><%= command.id_command %></td>
-    <td><%= command.id_client %></td>
-    <td><%= command.datePaiement %></td>
-    <td><%= command.pritTTC %></td>
+    <td><%= command.client_id %></td>
+    <td><%= command.dates_paiement %></td>
+    <td><%= command.prix_ttc %></td>
     <td><%= link_to 'Show', command %></td>
     <td><%= link_to 'Edit', edit_command_path(command) %></td>
     <td><%= link_to 'Destroy', command, method: :delete, data: { confirm: 'Are you sure?' } %></td>

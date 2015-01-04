@@ -1,3 +1,96 @@
-// Place all the styles related to the Page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+img {           
+             display: block;
+             margin: 0 auto;
+   
+}
+
+html, body, ul {margin:0;padding:0;}
+#menu {min-width: 900px;text-align:center;}
+#menu>li {position:relative;display:inline-block;vertical-align:top;}
+#menu>li+li {border-left:1px solid #fff;}
+#menu a {display:block;padding:13px 60px;text-decoration:none;font:1em sans-serif;color:#fff;background:#333;transition:all .3s ease;}
+#menu li:hover>a {background:#09f;}
+#menu ul {white-space:nowrap;position:absolute;top:-9999px;list-style:none;}
+#menu li:hover ul {top:100%;}
+
+
+
+  
+
+body {
+
+
+			
+			h2 {             
+				
+   				height: 800px;  
+        		background-image: url("fond01.JPG"); 
+        		  background-repeat: no-repeat;
+				background-size: cover;
+				 background-position: 130px 0px; 
+
+
+   					pre{   				
+   							background-color: rgba(0, 0, 0, 0);
+   							margin-left: 140px;  							    
+   						}
+   				}
+
+			h1 {              
+				
+   				 
+        		
+   					pre{
+   							background-color: rgba(0, 0, 0, 0);
+   							margin-left: 300px;
+   							margin-right: 300px;
+   							    
+   						}
+   				
+				}
+			h3 {           
+				
+   				height: 800px;
+   				background-image: url("lej9.jpg");
+   				background-repeat: no-repeat;   
+        		background-size:300px  ;
+        		background-position: right center;
+   				pre{   				
+   							background-color: rgba(0, 0, 0, 0);
+   							margin-left: 300px;
+   							
+  							    
+   						}
+   				
+				}
+			h4 {              
+				
+   				height: 800px;  
+        		background-size: cover;
+   					pre{
+   				
+   							background-color: rgba(0, 0, 0, 0);
+   							margin-left: 300px;
+
+   							    
+   						}
+   				
+				}
+   
+    
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+
+   font-size: small;
+
+   font-color: #fff;
+
+   background-color: #nccf;
+
+}
+
+ 
+
+

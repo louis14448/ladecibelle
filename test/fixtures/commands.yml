@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id_command: 
-  id_client: MyText
-  datePaiement: 2014-12-30
-  pritTTC: 1.5
+  client_id: 1
+  dates_paiement: 2015-01-01
+  prix_ttc: 1.5
 
 two:
-  id_command: 
-  id_client: MyText
-  datePaiement: 2014-12-30
-  pritTTC: 1.5
+  client_id: 1
+  dates_paiement: 2015-01-01
+  prix_ttc: 1.5

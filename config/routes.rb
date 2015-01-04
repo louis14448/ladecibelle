@@ -1,5 +1,28 @@
 Ladecibelle::Application.routes.draw do
+  #get "page/home"
+  
+  get "page/notrebiere"
+
+  get "page/leconcetp"
+
+  get "page/nosmusique"
+
+  get "page/lej9"
+
+  get "page/contact"
+
+
+  
+  #resources :contact
+
+  resources :commands
+
+
   resources :clients
+
+  root :to => 'page#home'
+
+  #root :to => 'home#index'
 
 
   resources :produits
@@ -14,16 +37,10 @@ Ladecibelle::Application.routes.draw do
   resources :command_details_services
 
 
-  resources :commands
 
 
-  get "page/home"
-
-  get "page/contact"
-
- get "home/index"
  #root :to => 'pages#home'
- root :to => 'home#index'
+
  #match '/', :to => 'pages#home'
  #resources :home
  #root :to => 'app/views/home/index.html.erb'

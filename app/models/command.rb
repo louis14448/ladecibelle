@@ -1,3 +1,5 @@
 class Command < ActiveRecord::Base
-  attr_accessible :datePaiement, :id_client, :id_command, :pritTTC
+
+  attr_accessible  :dates_paiement, :prix_ttc
+   belongs_to :client
 end

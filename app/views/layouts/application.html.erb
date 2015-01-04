@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ladecibelle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title><%= @titre %></title>
+  <div id="img"> <%= image_tag("logo.png", :id => "logo",width: '650') %></div>	
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  
+
+						
+										
+<nav>
+	<ul id="menu">
+		<li><a href="/">NOTRE BIERE</a></li>
+	 <li><a href="../page/leconcetp">Le Concept</a></li>
+	 <li><a href="../page/nosmusique">Nos Musiques</a></li>
+	 <li><a href="../page/lej9">Le J9</a></li>
+	 <li><a href="../page/contact">Contact</a></li>
+	</ul>
+</nav>
+
 </head>
+
 <body>
+	
 
+
+<p>
 <%= yield %>
-
+</p>
 </body>
+
+
+
+
+
+<%= csrf_meta_tag %>
+
 </html>

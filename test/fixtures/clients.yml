@@ -3,6 +3,7 @@
 one:
   nom: MyString
   prenom: MyString
+  email: MyString
   tel: MyString
   addr_fact: MyString
   adr_livraison: MyString
@@ -10,6 +11,7 @@ one:
 two:
   nom: MyString
   prenom: MyString
+  email: MyString
   tel: MyString
   addr_fact: MyString
   adr_livraison: MyString

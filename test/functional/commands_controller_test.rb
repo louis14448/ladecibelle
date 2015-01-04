@@ -18,7 +18,7 @@ class CommandsControllerTest < ActionController::TestCase
 
   test "should create command" do
     assert_difference('Command.count') do
-      post :create, command: { datePaiement: @command.datePaiement, id_client: @command.id_client, id_command: @command.id_command, pritTTC: @command.pritTTC }
+      post :create, command: { client_id: @command.client_id, dates_paiement: @command.dates_paiement, prix_ttc: @command.prix_ttc }
     end
 
     assert_redirected_to command_path(assigns(:command))
@@ -35,7 +35,7 @@ class CommandsControllerTest < ActionController::TestCase
   end
 
   test "should update command" do
-    put :update, id: @command, command: { datePaiement: @command.datePaiement, id_client: @command.id_client, id_command: @command.id_command, pritTTC: @command.pritTTC }
+    put :update, id: @command, command: { client_id: @command.client_id, dates_paiement: @command.dates_paiement, prix_ttc: @command.prix_ttc }
     assert_redirected_to command_path(assigns(:command))
   end
 
