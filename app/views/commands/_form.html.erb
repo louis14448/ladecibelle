@@ -1,7 +1,7 @@
 <%= form_for(@command) do |f| %>
   <% if @command.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@command.errors.count, "error") %> prohibited this command from being saved:</h2>
+      <h1><%= pluralize(@command.errors.count, "error") %> prohibited this command from being saved:</h1>
 
       <ul>
       <% @command.errors.full_messages.each do |msg| %>
@@ -31,3 +31,4 @@
   </div>
 
 <% end %>
+
